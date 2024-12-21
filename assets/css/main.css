@@ -60,6 +60,38 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+.dropdown-menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px; /* Ajoutez un peu de padding si nécessaire */
+}
+
+.dropdown-menu .col-4 {
+  flex: 0 0 33.33%; /* Chaque colonne occupera un tiers de la largeur */
+  box-sizing: border-box; /* Assurez-vous que le padding est inclus dans la largeur */
+}
+
+.dropdown-menu li {
+  list-style: none; /* Supprimez les puces de la liste */
+}
+
+.dropdown-menu a {
+  display: block; /* Assurez-vous que les liens occupent toute la largeur de la colonne */
+  padding: 5px 10px; /* Ajoutez un peu de padding pour le confort */
+  text-decoration: none; /* Supprimez le soulignement des liens */
+}
+.fixed-contact-info {
+  position: relative; /* Positionne la section de manière relative */
+  z-index: 1000; /* Assure que la section est au-dessus du header */
+  background-color: #fff; /* Fond blanc ou une autre couleur de votre choix */
+  padding: 10px 0; /* Ajoute un peu d'espace autour du contenu */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet de profondeur */
+}
+
+.header {
+  margin-top: 60px; /* Ajoute un espace en haut du header pour éviter qu'il ne soit caché par la section contact-info */
+}
+
 body {
   color: var(--default-color);
   background-color: var(--background-color);
